@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap');
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/******************** Navbar ****************************/
+nav{
+    z-index: 2;
+}
+.nav-item a.nav-link{
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.0225rem;
+    color: #fff !important;
+}
+.nav-link:hover{
+    border-top: 2px solid orange !important;
+    padding-bottom: -15px !important;
+}
+.header-wrapper{
+    background: url("https://images.unsplash.com/photo-1572521165329-b197f9ea3da6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
+    height: 91vh;
+    background-size: cover;
+    background-position: center center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-info{
+    background: #262322;
+    height: 91vh;
+    opacity: .8;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header-info {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white !important;
 }
-
-.App-link {
-  color: #61dafb;
+.typed-text{
+    color: white !important;
+    font-size: 25px;
+    font-weight: 700;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tsparticles-canvas-el{
+    position: absolute;
+    z-index: 1;
+}
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #262322;
+    color: white;
+}
+.list-group-item a{
+    color: #731e1e !important;
+    font-size: 30px;
+}
+.list-group-item:hover a{
+    color: #79b53e !important;
+    cursor: pointer;
+}
+.about_img{
+    height: 100%;
+    width: 100%;
+}
+.about_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
